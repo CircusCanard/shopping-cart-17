@@ -1,1 +1,33 @@
-<p>top-bar works!</p>
+<div class="wrapper">
+  <div class="brand-group" routerLink="/">
+    <img src="assets/icons/menu.png" class="menu link" />
+    <img src="assets/icons/logo.png" class="logo link" />
+    <div class="brand-name link">Shopping Store</div>
+  </div>
+
+  <div class="search-group">
+    <input type="search" class="search-input" placeholder="Search" />
+    <div class="search-icon-wrapper link">
+      <img src="assets/icons/search.png" class="search-icon" />
+    </div>
+  </div>
+
+  <div class="user-group">
+    <img src="assets/icons/user.png" class="user-icon link" />
+    <div class="cart" routerLink="/cart">
+      <img src="assets/icons/cart.png" class="cart-icon link" />
+      <span class="cart-count">{{ 0 }}</span>
+      <span class="cart-total">${{ 0 | number : "1.2-2" }}</span>
+    </div>
+  </div>
+</div>
+
+<!-- second line -->
+<div class="mobile-wrapper">
+  <div class="search-group mobile">
+    <input type="search" class="search-input" placeholder="Search" />
+    <div class="search-icon-wrapper link">
+      <img src="assets/icons/search.png" class="search-icon" />
+    </div>
+  </div>
+</div>
